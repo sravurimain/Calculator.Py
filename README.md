@@ -1,50 +1,72 @@
-def add(x, y):
-  return x + y
+# Python Simple Calculator App
 
-def subtract(x, y):
-  return x - y
+This is a simple calculator app built using Python. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
-def multiply(x, y):
-  return x * y
+## Features
 
-def divide(x, y):
-  if y != 0:
-      return x / y
-  else:
-      return "Error: Division by zero"
+- **Addition**: Add two numbers.
+- **Subtraction**: Subtract one number from another.
+- **Multiplication**: Multiply two numbers.
+- **Division**: Divide one number by another, with error handling for division by zero.
+- **Exit Option**: Allows the user to exit the calculator app.
 
-def calculator():
-  while True:
-      print("\nSimple Calculator")
-      print("1. Add")
-      print("2. Subtract")
-      print("3. Multiply")
-      print("4. Divide")
-      print("5. Exit")
+## Getting Started
 
-      choice = input("Enter choice (1/2/3/4/5): ")
+### Prerequisites
 
-      if choice in ['1', '2', '3', '4']:
-          try:
-              num1 = float(input("Enter first number: "))
-              num2 = float(input("Enter second number: "))
-          except ValueError:
-              print("Error: Invalid input. Please enter valid numbers.")
-              continue
+You need to have Python 3.x installed on your system. To check if Python is installed, use the following command:
 
-          if choice == '1':
-              print(f"Result: {add(num1, num2)}")
-          elif choice == '2':
-              print(f"Result: {subtract(num1, num2)}")
-          elif choice == '3':
-              print(f"Result: {multiply(num1, num2)}")
-          elif choice == '4':
-              print(f"Result: {divide(num1, num2)}")
-      elif choice == '5':
-          print("Exiting the calculator.")
-          break
-      else:
-          print("Invalid choice. Please enter a valid option.")
+```bash
+python --version
+```
+## Installation
+- **Clone the repository or download the code files to your local machine**
+- **Navigate to the project directory**
+- **Run the python script to start the calculator**
 
-if __name__ == "__main__":
-  calculator()
+## Usage
+Once the script is running, the calculator will prompt you with a menu of options:
+```bash
+Simple Calculator
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Exit
+Enter choice (1/2/3/4/5):
+```
+You can choose from the following operations:
+
+Addition: Select 1, then input two numbers to add.
+
+Subtraction: Select 2, then input two numbers to subtract.
+
+Multiplication: Select 3, then input two numbers to multiply.
+
+Division: Select 4, then input two numbers to divide (division by zero is handled with an error message).
+
+After choosing an operation, the result will be displayed, and you can perform another calculation or choose to exit the app by selecting 5.
+
+### Example
+```bash
+Simple Calculator
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Exit
+Enter choice (1/2/3/4/5): 1
+Enter first number: 10
+Enter second number: 5
+Result: 15.0
+```
+
+## Contact
+Saiaashish Ravuri
+
+Email: s.ravurimain@gmail.com
+
+Github: sravurimain
+
+
+
